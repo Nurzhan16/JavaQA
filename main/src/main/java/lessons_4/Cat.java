@@ -1,6 +1,6 @@
 package lessons_4;
 
-public class Cat  {
+public class Cat {
     public String name;
     public int appetite;
     public boolean fullness;
@@ -16,6 +16,6 @@ public class Cat  {
     }
 
 
-    }
+}
 
 

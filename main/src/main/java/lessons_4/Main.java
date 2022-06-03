@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     public static Scanner sc = new Scanner(System.in);
+
     public static void main(String[] args) {
         int action;
         Cat[] allCats = new Cat[2];
@@ -11,11 +12,10 @@ public class Main {
         allCats[1] = new Cat("Снежок", 30, false);
 
 
-
         Plate plate = new Plate(50);
         plate.info();
         for (int i = 0; i < allCats.length; i++) {
-            if (allCats[i].fullness == false && allCats[i].appetite < plate.food){
+            if (allCats[i].fullness == false && allCats[i].appetite < plate.food) {
                 allCats[i].eat(plate);
                 allCats[i].fullness = true;
                 System.out.println("Котик " + allCats[i].name + " покушал!");
@@ -31,5 +31,5 @@ public class Main {
 
     }
 
-    }
+}
 
